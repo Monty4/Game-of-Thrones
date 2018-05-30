@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./JS/index.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="row">
+            <div class="header-title col-2 col-s-12">
+                <img src="./images/GoT.png" alt="logo">
+            </div>
+            <div class="header-title col-2 col-s-12">
+                <p class="title1">Game of Thrones</p>
+            </div>
+            <div class="header-title col-4 col-s-12" id="selected">
+                <p class="title2">Daenerys Targaryen</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-6 col-s-12 left_side">
+            <div class="menu" style="height: auto">
+                <div class="row" style="display: flex">
+                    <div class="title-selected col-3 col-s-12" style="justify-content: center">
+                        <p class="title1">Favoritos</p>
+                    </div>
+                    <div class="title col-4 col-s-12" style="justify-content: center">
+                        <p class="title1">Listado de casas</p>
+                    </div>
+                    <div class="title col-5 col-s-12" style="justify-content: center">
+                        <p class="title1">Personajes secundarios</p>
+                    </div>
+                </div>
+            </div>
+            <div class="reviews">
+                <div class="box col-4">Top(2)</div>
+                <div class="box col-4">Sin valorar(3)</div>
+                <div class="box col-4">Actualizados(4)</div>
+            </div>
+            <div class="list" onclick="showDescription('daenerys')">
+                <div class="row">
+                    <div class="col-3 col-s-12 image_content">
+                        <img src="./images/Star1.png" alt="star">
+                        <img src="./images/Star1.png" alt="star">
+                        <img src="./images/Star1.png" alt="star">
+                        <img src="./images/Star1.png" alt="star">
+                        <img src="./images/Star1.png" alt="star">
+                    </div>
+                    <div class="rounded col-2 col-s-12" style="background-image: url('./images/daenerys.png')"></div>
+                    <div class="col-5 col-s-12 info">
+                        <div>
+                            <label class="name">Daenerys Targaryen</label>
+                            <label class="description">Casa Targaryen</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="list" onclick="showDescription('tyrion')">
+                <div class="row">
+                    <div class="col-3 col-s-12 image_content">
+                        <img src="./images/Star1.png" alt="star">
+                        <img src="./images/Star1.png" alt="star">
+                        <img src="./images/Star1.png" alt="star">
+                        <img src="./images/Star1.png" alt="star">
+                        <img src="./images/Star2.png" alt="star">
+                    </div>
+                    <div class="rounded col-2 col-s-12" style="background-image: url('./images/Tyrion.png')"></div>
+                    <div class="col-5 col-s-12 info">
+                        <div>
+                            <label class="name">Tyrion Lannister</label>
+                            <label class="description">Casa Lannister</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="list" onclick="showDescription('jon')">
+                <div class="row">
+                    <div class="col-3 col-s-12 image_content">
+                        <img src="./images/Star1.png" alt="star">
+                        <img src="./images/Star1.png" alt="star">
+                        <img src="./images/Star1.png" alt="star">
+                        <img src="./images/Star3.png" alt="star">
+                        <img src="./images/Star3.png" alt="star">
+                    </div>
+                    <div class="rounded col-2 col-s-12" style="background-image: url('./images/jon.png')"></div>
+                    <div class="col-5 col-s-12 info">
+                        <div>
+                            <label class="name">Jon Snow</label>
+                            <label class="description">Lord Comandante de la Guardia de la noche</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="list" onclick="showDescription('margaery')">
+                <div class="row">
+                    <div class="col-3 col-s-12 image_content">
+                        <img src="./images/Star3.png" alt="star">
+                        <img src="./images/Star3.png" alt="star">
+                        <img src="./images/Star3.png" alt="star">
+                        <img src="./images/Star3.png" alt="star">
+                        <img src="./images/Star3.png" alt="star">
+                    </div>
+                    <div class="rounded col-2 col-s-12"  style="background-image: url('./images/margaery.png')"></div>
+                    <div class="col-5 col-s-12 info">
+                        <div>
+                            <label class="name">Margaery Tyrell</label>
+                            <label class="description">Casa Tyrell</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="list" onclick="showDescription('sansa')">
+                <div class="row">
+                    <div class="col-3 col-s-12 image_content">
+                        <img src="./images/Star3.png" alt="star">
+                        <img src="./images/Star3.png" alt="star">
+                        <img src="./images/Star3.png" alt="star">
+                        <img src="./images/Star3.png" alt="star">
+                        <img src="./images/Star3.png" alt="star">
+                    </div>
+                    <div class="rounded col-2 col-s-12" style="background-image: url('./images/sansa.png')"></div>
+                    <div class="col-5 col-s-12 info">
+                        <div>
+                            <label class="name">Sansa Stark</label>
+                            <label class="description">Casa Stark</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="list" onclick="showDescription('cersei')">
+                <div class="row">
+                    <div class="col-3 col-s-12 image_content">
+                        <img src="./images/Star3.png" alt="star">
+                        <img src="./images/Star3.png" alt="star">
+                        <img src="./images/Star3.png" alt="star">
+                        <img src="./images/Star3.png" alt="star">
+                        <img src="./images/Star3.png" alt="star">
+                    </div>
+                    <div class="rounded col-2 col-s-12" style="background-image: url('./images/cersei.png')"></div>
+                    <div class="col-5 col-s-12 info">
+                        <div>
+                            <label class="name">Cersei Lannister</label>
+                            <label class="description">Casa Lannister</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6 col-s-12 right_side">
+            <div class="rounded col-3 col-s-12" id="image"></div>
+            <div id="info">
+                <label class="name" id="name"></label>
+                <label class="description" id="alias"></label>
+                <label class="description" id="born"></label>
+                <label class="description" id="family"></label>
+            </div>
+
+            <div class="row" id="more_info">
+                <div class="col-3 col-s-12" style="justify-content: center">
+                    <p class="title-selected">Descripción</p>
+                </div>
+                <div class="title col-4 col-s-12" style="justify-content: center">
+                    <p class="title">Historia</p>
+                </div>
+                <div class="title col-5 col-s-12" style="justify-content: center">
+                    <p class="title">Actriz</p>
+                </div>
+            </div>
+
+            <div id="resume"></div>
+        </div>
+    </div>
+</body>
+</html>
